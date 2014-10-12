@@ -16,6 +16,7 @@ This sheet is perfect for both developers and designers. It'll list all the stru
 * [Escaping](#escaping)
 * [Control Structures](#control-structures)
 * [Templates and Blocks](#templates-and-blocks)
+* [Built-in Filters](#built-in-filters)
 
 ## Operators
 ```
@@ -224,13 +225,27 @@ format {{ "I like %s and %s"|format(foo, 'bar') }}
 ```
 {{ "Hello %name% !"|replace({'%name%': 'world'}) }}
 ```
-**url_encode**  URL encodes a given string.
-**json_encode** Return the JSON representation of a given string.
-**title**       Return a titlecased version of the value.
-**capitalize**  Return a capitalized version of the value.
-**upper**       Convert a value to uppercase
-**lower**       Convert a value to lowercase
-**striptags**   Strips SGML/XML tags and replace adjacent whitespaces by one space
+```
+url_encode  URL encodes a given string.
+```
+```
+json_encode Return the JSON representation of a given string.
+```
+```
+title       Return a titlecased version of the value.
+```
+```
+capitalize  Return a capitalized version of the value.
+```
+```
+upper       Convert a value to uppercase
+```
+```
+lower       Convert a value to lowercase
+```
+```
+striptags   Strips SGML/XML tags and replace adjacent whitespaces by one space
+```
 
 
 
