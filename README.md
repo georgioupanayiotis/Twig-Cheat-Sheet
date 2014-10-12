@@ -15,7 +15,7 @@ This sheet is perfect for both developers and designers. It'll list all the stru
 * [Control Structures](#control-structures)
 * [Templates and Blocks](#templates-and-blocks)
 
-###Operators
+## Operators
 ```
 [not] in Containment operator
 is [not] Test operator
@@ -28,13 +28,13 @@ is [not] Test operator
 {% %} Used to execute statements
 ```
 
-###Variables
-####Print
+## Variables
+###Print
 <pre><code>{{ a_variable }}
 {{ foo.bar }}
 {{ foo['bar'] }}</code></pre>
 
-####Set
+###Set
 ```
 {% set value = 'foobar' %}
 {% set foo = 'foo' %}
@@ -52,18 +52,18 @@ is [not] Test operator
 {% endset %}
 ```
 
-<h4>Filters</h4>
+## Filters
 ```
 {{ foo|striptags }}
 {% filter upper %}This text becomes uppercase{% endfilter %}
 ```
 
-<h4>Comment</h4>
+## Comment
 ```
 {# single line comment #}
 ```
 
-<h4>Whitespace Control</h4>
+## Whitespace Control
 ```
 {% spaceless %}
   <div>
@@ -77,7 +77,7 @@ is [not] Test operator
 {# Will output <h1>Lorem Ipsum </h1> #}
 ```
 
-<h4>Macro</h4>
+## Macro
 ```
 {% macro link(url,label) %}
   <a href="{{ url }}"> {{ label }}</a>
@@ -89,7 +89,7 @@ is [not] Test operator
 {{ input_field('foobar') }}
 ```
 
-<h4>Escaping</h4>
+## Escaping
 ```
 {{ '{{' }}
 ```
@@ -100,7 +100,7 @@ is [not] Test operator
 {% endraw %}
 ```
 
-<h4>Control Structures</h4>
+## Control Structures
 FOR
 ```
 <ul>
@@ -173,7 +173,7 @@ IF
 {% endif %}
 ```
 
-<h4>Templates and Blocks</h4>
+## Templates and Blocks
 
 <h5>Define a block (redefine is existing)</h5>
 ```
