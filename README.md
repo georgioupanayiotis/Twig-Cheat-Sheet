@@ -211,7 +211,26 @@ loop.parent       The parent context
 ```
 
 ##Built-in Filters
-:---: | ---
-#date | ```{{ post.created_at|date("d/m/Y") }}
-{{ "now"|date("d/m/Y") }}```
+**date**
+```
+{{ post.created_at|date("d/m/Y") }}
+{{ "now"|date("d/m/Y") }}
+```
+**format**
+```
+format {{ "I like %s and %s"|format(foo, 'bar') }}
+```
+**replace**
+```
+{{ "Hello %name% !"|replace({'%name%': 'world'}) }}
+```
+**url_encode**  URL encodes a given string.
+**json_encode** Return the JSON representation of a given string.
+**title**       Return a titlecased version of the value.
+**capitalize**  Return a capitalized version of the value.
+**upper**       Convert a value to uppercase
+**lower**       Convert a value to lowercase
+**striptags**   Strips SGML/XML tags and replace adjacent whitespaces by one space
+
+
 
