@@ -211,3 +211,7 @@ loop.parent       The parent context
 ```
 
 ##Built-in Filters
+:---: | ---
+#date | ```{{ post.created_at|date("d/m/Y") }}
+{{ "now"|date("d/m/Y") }}```
+
