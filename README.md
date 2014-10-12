@@ -343,4 +343,4 @@ Returns the constant value for a given string.
   </service>
 </services>
 ```
-[Back to top](#twig-sheat-sheet)
+[Back to top](#twig-cheat-sheet)
