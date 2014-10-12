@@ -37,9 +37,11 @@ is [not] | Test operator
 
 ## Variables
 **Print**
-<pre><code>{{ a_variable }}
+```
+{{ a_variable }}
 {{ foo.bar }}
-{{ foo['bar'] }}</code></pre>
+{{ foo['bar'] }}
+```
 
 **Set**
 ```
