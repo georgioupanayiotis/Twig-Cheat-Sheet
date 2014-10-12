@@ -29,12 +29,12 @@ is [not] Test operator
 ```
 
 ## Variables
-###Print
+**Print**
 <pre><code>{{ a_variable }}
 {{ foo.bar }}
 {{ foo['bar'] }}</code></pre>
 
-###Set
+**Set**
 ```
 {% set value = 'foobar' %}
 {% set foo = 'foo' %}
@@ -101,7 +101,7 @@ is [not] Test operator
 ```
 
 ## Control Structures
-FOR
+**FOR**
 ```
 <ul>
   {% for item in collection %} <li>{{ item }}</li> {% endfor %}
@@ -153,7 +153,7 @@ loop.last         True if last iteration
 loop.length       The number of items in the sequence
 loop.parent       The parent context
 ```
-IF
+**IF**
 ```
 {% if foo %}
 ...
