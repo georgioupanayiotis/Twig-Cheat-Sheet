@@ -17,6 +17,10 @@ This sheet is perfect for both developers and designers. It'll list all the stru
 * [Control Structures](#control-structures)
 * [Templates and Blocks](#templates-and-blocks)
 * [Built-in Filters](#built-in-filters)
+* [Global Functions](#global-functions)
+* [Automatic Escaping](#automatic-escaping)
+* [Symfony2](#symfony2)
+
 
 ## Operators
 ```
@@ -246,6 +250,97 @@ lower       Convert a value to lowercase
 ```
 striptags   Strips SGML/XML tags and replace adjacent whitespaces by one space
 ```
+**join**
+```
+{{ [a, b, c]|join(', ') }} {# return "a,b,c" #}
+{{ [a, b, c]|join }} {# return abc #}
+```
+```
+reverse     Reverses an array or an object implementing the iterator interface
+```
+```
+length      Return the number of items of a sequence or array, or the length of a string
+```
+```
+sort        Sort an array
+```
+**default**
+```
+{{ var|default('var is not defined') }}
+```
+**keys**
+```
+{% for key in array|keys %} ... {% endfor %}
+```
+```
+escape, e   Convert a string to HTML-safe sequences.
+```
+```
+raw         Value will not be escaped
+```
+```
+merge       Merge an array with the value.
+```
 
+##Global Functions
+**range**
+```
+{% for i in range(0, 3) %} {{ i }} {% endfor %}
+{# returns 0, 1, 2, 3 #}
 
+{% for i in range (0, 6, 2) %} {{ i }} {% endfor %}
+```
+**cycle**
+```
+{% for i in 0..10 %}
+  {{ cycle(['odd', 'even'], i) }}
+{% endfor %}
+```
+**constant**
+```
+Returns the constant value for a given string.
+  {{ some_date|date(constant('DATE_W3C')) }}
+```
 
+##Automatic Escaping
+```
+{% autoescape %}
+  Everything will be automatically escaped in this block
+  using the HTML strategy
+{% endautoescape %}
+{% autoescape 'html' %}
+  Everything will be automatically escaped in this block
+  using the HTML strategy
+{% endautoescape %}
+{% autoescape 'js' %}
+  Everything will be automatically escaped in this block
+  using the js escaping strategy
+{% endautoescape %}
+{% autoescape false %}
+  Everything will be outputted as is in this block
+{% endautoescape %}
+```
+
+##Symfony2
+**Generate URL**
+```
+{{ path('route_name', {'param': 'value'}) }}
+```
+**Generate absolute URL**
+```
+{{ url('route_name') }}
+```
+**Link to Assets**
+```
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
+<img src="{{ asset('images/logo.png') }}" alt="Logo" />
+```
+**Registering extension**
+```
+<services>
+  <service id="acme.twig.acme_extension" class="Project_Twig_Extension">
+    <tag name="twig.extension" />
+  </service>
+</services>
+```
+[Back to top](#twig-sheat-sheet)
