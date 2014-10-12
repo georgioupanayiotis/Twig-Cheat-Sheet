@@ -64,11 +64,13 @@ is [not] Test operator
 {{ foo|striptags }}
 {% filter upper %}This text becomes uppercase{% endfilter %}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Comment
 ```
 {# single line comment #}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Whitespace Control
 ```
@@ -83,6 +85,7 @@ is [not] Test operator
 <h1> {{- value }} </h1>
 {# Will output <h1>Lorem Ipsum </h1> #}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Macro
 ```
@@ -95,6 +98,7 @@ is [not] Test operator
 {{ form.input('foobar') }}
 {{ input_field('foobar') }}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Escaping
 ```
@@ -106,6 +110,7 @@ is [not] Test operator
   <h1>{{ value }}</h1>
 {% endraw %}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Control Structures
 **FOR**
@@ -179,6 +184,7 @@ loop.parent       The parent context
   </ul>
 {% endif %}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ## Templates and Blocks
 
@@ -214,6 +220,7 @@ loop.parent       The parent context
 ```
 {{ block('base_sidebar') }}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ##Built-in Filters
 **date**
@@ -281,6 +288,7 @@ raw         Value will not be escaped
 ```
 merge       Merge an array with the value.
 ```
+[Back to top](#twig-cheat-sheet)
 
 ##Global Functions
 **range**
@@ -301,6 +309,7 @@ merge       Merge an array with the value.
 Returns the constant value for a given string.
   {{ some_date|date(constant('DATE_W3C')) }}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ##Automatic Escaping
 ```
@@ -320,6 +329,7 @@ Returns the constant value for a given string.
   Everything will be outputted as is in this block
 {% endautoescape %}
 ```
+[Back to top](#twig-cheat-sheet)
 
 ##Symfony2
 **Generate URL**
