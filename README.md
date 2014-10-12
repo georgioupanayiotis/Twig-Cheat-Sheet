@@ -3,7 +3,7 @@ Twig-Cheat-Sheet
 
 This sheet is perfect for both developers and designers. It'll list all the structure controls and tests you can do with twig's engine. Assets, templates, filters, operators won't be a hard thing to remember with that sheet.
 
-### Table of Contents
+## Table of Contents
 
 * [Operators](#operators)
 * [Variables](#variables)
@@ -15,8 +15,9 @@ This sheet is perfect for both developers and designers. It'll list all the stru
 * [Control Structures](#control-structures)
 * [Templates and Blocks](#templates-and-blocks)
 
-<h3>Operators</h3>
-<pre><code>[not] in Containment operator
+###Operators
+```
+[not] in Containment operator
 is [not] Test operator
 .. Creates a sequence
 | Applies a filter
@@ -24,15 +25,16 @@ is [not] Test operator
 . or [] Gets an attribute of an object
 ?: Ternary operator
 {{ }} Used to print the result of an expression evalution
-{% %} Used to execute statements</code></pre>
+{% %} Used to execute statements
+```
 
-<h3>Variables</h3>
-<h4>Print</h4>
+###Variables
+####Print
 <pre><code>{{ a_variable }}
 {{ foo.bar }}
 {{ foo['bar'] }}</code></pre>
 
-<h4>Set</h4>
+####Set
 ```
 {% set value = 'foobar' %}
 {% set foo = 'foo' %}
