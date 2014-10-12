@@ -23,17 +23,17 @@ This sheet is perfect for both developers and designers. It'll list all the stru
 
 
 ## Operators
-```
-[not] in Containment operator
-is [not] Test operator
-.. Creates a sequence
-| Applies a filter
-~ Concatenation
-. or [] Gets an attribute of an object
-?: Ternary operator
-{{ }} Used to print the result of an expression evalution
-{% %} Used to execute statements
-```
+Operator | Purpose
+:---: | :---:
+[not] in | Containment operator
+is [not] | Test operator
+.. | Creates a sequence
+|  | Applies a filter
+~  |Concatenation
+. or [] | Gets an attribute of an object
+?: | Ternary operator
+{{ }} | Used to print the result of an expression evalution
+{% %} | Used to execute statements
 
 ## Variables
 **Print**
