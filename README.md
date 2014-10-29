@@ -87,6 +87,10 @@ is [not] | Test operator
 <h1> {{- value }} </h1>
 {# Will output <h1>Lorem Ipsum </h1> #}
 ```
+```
+remove white space inside the attribute
+{%- foo -%}
+```
 [Back to top](#twig-cheat-sheet)
 
 ## Macro
